@@ -3,7 +3,7 @@ export const Options = ({
   handleNeutral,
   handleBad,
   handleReset,
-  totalFeedback,
+  allFeedback,
 }) => {
   return (
     <div>
@@ -11,7 +11,7 @@ export const Options = ({
       <button onClick={handleNeutral}>Neutral</button>
       <button onClick={handleBad}>Bad</button>
 
-      {totalFeedback !== 0 && <button onClick={handleReset}>Reset</button>}
+      {allFeedback !== 0 && <button onClick={handleReset}>Reset</button>}
     </div>
   );
 };

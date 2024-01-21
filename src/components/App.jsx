@@ -52,9 +52,9 @@ function App() {
     });
   };
 
-  const totalFeedback = reviews.good + reviews.neutral + reviews.bad;
+  const allFeedback = reviews.good + reviews.neutral + reviews.bad;
   const percent = Math.round(
-    ((reviews.good + reviews.neutral) / totalFeedback) * 100
+    ((reviews.good + reviews.neutral) / allFeedback) * 100
   );
   return (
     <>
@@ -64,17 +64,17 @@ function App() {
         handleNeutral={handleNeutral}
         handleBad={handleBad}
         handleReset={handleReset}
-        totalFeedback={totalFeedback}
+        allFeedback={allFeedback}
       />
       <div>
-        {totalFeedback === 0 ? (
+        {allFeedback === 0 ? (
           <Notification />
         ) : (
           <Feedback
             good={reviews.good}
             neutral={reviews.neutral}
             bad={reviews.bad}
-            totalFeedback={totalFeedback}
+            allFeedback={allFeedback}
             percent={percent}
           />
         )}
