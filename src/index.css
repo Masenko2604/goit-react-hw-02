@@ -3,7 +3,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: #1b05a7;
-  background-color: rgba(139, 193, 252, 0.87);
+  background-color: rgba(184, 210, 238, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,16 +38,14 @@ h1 {
 
 button {
   padding: 8px 12px;
-  color: #03134e;
+  color: #040b21;
   font-weight: bold;
-  box-shadow: -5px -5px 20px #120e67, 5px 5px 20px #babecc;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 600;
   font: inherit;
   border-radius: 15px;
-  background-color: #99b7e6;
-  
+  background-color: #99b7e6;  
   box-shadow: 0 6px 8px #291db2, 0 -2px 1px #291db2;
 
 }
