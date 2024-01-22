@@ -53,7 +53,7 @@ function App() {
   };
 
   const allFeedback = reviews.good + reviews.neutral + reviews.bad;
-  const percent = Math.round(
+  const educt = Math.round(
     ((reviews.good + reviews.neutral) / allFeedback) * 100
   );
   return (
@@ -75,7 +75,7 @@ function App() {
             neutral={reviews.neutral}
             bad={reviews.bad}
             allFeedback={allFeedback}
-            percent={percent}
+            educt={educt}
           />
         )}
       </div>
