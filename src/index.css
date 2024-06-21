@@ -36,6 +36,7 @@ h1 {
 
 
 button {
+  display: flex;
   padding: 8px 12px;
   color: #040b21;
   font-weight: bold;
@@ -46,6 +47,8 @@ button {
   border-radius: 15px;
   background-color: #99b7e6;  
   box-shadow: 0 6px 8px #291db2, 0 -2px 1px #291db2;
+  margin-right:  8px;
+  display:inline-block
 
 }
 
